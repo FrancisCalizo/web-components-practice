@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="UserCard.js"></script>
+  <script async src="TodoItem.js"></script>
+</head>
+<body>
+  <section>
+    <p>Hello World</p>
+
+    <div style="margin: 1rem 0;">
+      <todo-item checked>
+        Todo 1
+        <span slot="description">This is a description</span>
+      </todo-item>
+      <todo-item>Todo 1</todo-item>
+      <todo-item>Todo 1</todo-item>
+    </div>
+
+    <user-card 
+      name="John Doe"
+      avatar="https://randomuser.me/api/portraits/men/1.jpg"
+    >
+      <span slot="email">johndoe@gmail.com</span>
+      <span slot="phone">333-333-3333</span>
+    </user-card>    
+  </section>
+</body>
+</html>
